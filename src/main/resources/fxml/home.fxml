@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="homePane" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.http.client.tools.controller.HomeController">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.26057529610829105" orientation="VERTICAL" prefHeight="593.0" prefWidth="835.0">
+        <items>
+          <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+			  <children>
+                  <Button layoutX="742.0" layoutY="30.0" mnemonicParsing="false" onAction="#run" text="run" />
+                  <MenuButton fx:id="menuButtonUrl" layoutX="61.0" layoutY="30.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="68.0" text="URL">
+                    <items>
+                      <MenuItem fx:id="nenuItemGet" mnemonicParsing="false" onAction="#get" text="GET" />
+                      <MenuItem fx:id="nenuItemHead" mnemonicParsing="false" onAction="#head" text="HEAD" />
+                      <MenuItem fx:id="nenuItemPost" mnemonicParsing="false" onAction="#post" text="POST" />
+                      <MenuItem fx:id="nenuItemPut" mnemonicParsing="false" onAction="#put" text="PUT" />
+                      <MenuItem fx:id="nenuItemPatch" mnemonicParsing="false" onAction="#patch" text="PATCH" />
+                      <MenuItem fx:id="nenuItemDelete" mnemonicParsing="false" onAction="#delete" text="DELETE" />
+                      <MenuItem fx:id="nenuItemTrace" mnemonicParsing="false" onAction="#trace" text="TRACE" />
+                    </items>
+                  </MenuButton>
+                  <TextField fx:id="urlText" layoutX="142.0" layoutY="30.0" prefHeight="23.0" prefWidth="571.0" />
+                  <MenuButton fx:id="menuButtonParam" layoutX="15.0" layoutY="60.0" mnemonicParsing="true" prefHeight="23.0" prefWidth="114.0" text="param">
+                     <items>
+                     	<MenuItem fx:id="nenuItemAddBody" mnemonicParsing="false" onAction="#addBody" text="addBody" />
+                        <MenuItem fx:id="nenuItemAddParameter" mnemonicParsing="false" onAction="#addParameter" text="addParameter" />
+                        <MenuItem fx:id="nenuItemAddHeader" mnemonicParsing="false" onAction="#addHeader" text="addHeader" />
+                        <MenuItem fx:id="nenuItemAddContentType" mnemonicParsing="false" onAction="#addContentType" text="addContentType" />
+                     </items>
+                  </MenuButton>
+                  <Pane fx:id="homeChilderPane" layoutX="142.0" layoutY="60.0" prefHeight="80.0" prefWidth="572.0">
+                     <children>
+                        <Label text="which choose" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="781.0">
+               <children>
+                  <TextArea fx:id="resultText" layoutX="141.0" layoutY="14.0" prefHeight="406.0" prefWidth="571.0" wrapText="true" />
+               </children>
+          </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.http.client.tools.controller.add.BodyController">
+   <children>
+      <TextArea fx:id="textArea" onMouseExited="#mouseExited" onMouseMoved="#mouseMoved" prefHeight="80.0" prefWidth="572.0" promptText="{&quot;projectNo&quot;:&quot;208AF1FLWLJM&quot;,&quot;memberType&quot;:&quot;01&quot;}" wrapText="true" />
+   </children>
+</Pane>

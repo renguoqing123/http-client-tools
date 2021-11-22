@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.http.client.tools.controller.add.ParameterController">
+   <children>
+      <ScrollPane hbarPolicy="AS_NEEDED" onMouseExited="#mouseExited" prefHeight="259.0" prefWidth="572.0" vbarPolicy="AS_NEEDED">
+        <content>
+          <AnchorPane fx:id="anchorPaneParameter" minHeight="0.0" minWidth="0.0" prefWidth="572.0">
+               <children>
+               		<HBox fx:id="hboxParameter" prefHeight="22.0" prefWidth="587.0">
+               			<children>
+	                  		<Label layoutX="36.0" layoutY="18.0" prefHeight="24.0" prefWidth="43.0" text="  key：" />
+	   	   		   		    <TextField id="key" layoutX="68.0" layoutY="15.0" />
+	   	   		   		    <Label layoutX="255.0" layoutY="18.0" prefHeight="32.0" prefWidth="50.0" text=" value：" />
+	   	   		   		    <TextField id="value" layoutX="299.0" layoutY="15.0" />
+	   	   		   		    <Button layoutX="491.0" layoutY="14.0" mnemonicParsing="false" onAction="#addText" text="+" />
+	   	   		   		    <Button layoutX="532.0" layoutY="14.0" mnemonicParsing="false" onAction="#delText" text="-" />
+	                  	</children>
+               		</HBox>
+               </children>
+          </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>
